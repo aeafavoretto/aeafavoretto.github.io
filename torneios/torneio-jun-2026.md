@@ -10,7 +10,7 @@ permalink: /torneios/torneio-jun-2026/
 
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2>{{ page.title }}</h2>
+        <h2>Torneio Jun26 </h2>
         <hr class="star-primary">
       </div>
     </div>
