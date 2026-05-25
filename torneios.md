@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Torneios
+title: 
 permalink: /torneios/
 ---
 
