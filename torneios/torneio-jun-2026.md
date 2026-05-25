@@ -1,22 +1,45 @@
 ---
 layout: page
-title: Torneio de Inverno 2026
+title: Torneio Jun 2026
 permalink: /torneios/torneio-jun-2026/
 ---
 
-<div class="container">
+<!-- ================= HEADER ================= -->
+<section id="torneios">
+  <div class="container">
 
-  <h3>Detalhes do Torneio</h3>
-  <p>Data: Junho 2026</p>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>{{ page.title }}</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
 
-  <h4>Participantes</h4>
-  <ul>
-    <li>Equipe A</li>
-    <li>Equipe B</li>
-    <li>Equipe C</li>
-  </ul>
+    <!-- ================= CATEGORIES ================= -->
+    <div class="row">
+      <div class="col-lg-12 text-center">
 
-  <h4>Resultados</h4>
-  <p>Vencedor: Equipe A</p>
+        <h3>Categorias</h3>
 
-</div>
+        <p>Sub-17 | Sub-19 | Sub-21</p>
+        <p>Masculino | Feminino | Misto</p>
+
+      </div>
+    </div>
+
+    <!-- ================= BRACKETS ================= -->
+    <div class="row">
+      <div class="col-lg-12">
+
+        <iframe 
+          src="https://docs.google.com/spreadsheets/d/e/YOUR_ID/pubhtml"
+          width="100%" 
+          height="600"
+          style="border:none;">
+        </iframe>
+
+      </div>
+    </div>
+
+  </div>
+</section>
