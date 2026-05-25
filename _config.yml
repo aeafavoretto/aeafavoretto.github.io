@@ -69,3 +69,7 @@ defaults:
       type: "posts"
     values:
       permalink: ""
+
+collections:
+  members:
+    output: true
