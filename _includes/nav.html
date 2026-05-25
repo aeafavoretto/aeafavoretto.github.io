@@ -17,6 +17,9 @@
       <ul class="nav navbar-nav navbar-right">
         <li class="hidden">
           <a href="#page-top"></a>
+          {% else %}
+            <a href="{{ site.baseurl }}/#page-top">Informações</a>
+          {% endif %}
         </li>
         <li class="page-scroll">
           {% if page.url == "/" %}
