@@ -16,7 +16,7 @@ permalink: /torneios/
     </div>
 
     <!-- Scroll box -->
-    <div style="overflow: auto; height:250pt; width:100%; background:#FF9D67; padding:15px; border-radius:5px;">
+    <div style="overflow: auto; height:250pt; width:100%; background:#FFAD7F ; padding:15px; border-radius:5px;">
 
       <!-- Example entries -->
       <b>Jun 2026</b>:
