@@ -4,5 +4,40 @@ title:
 permalink: /torneios/
 ---
 
-<h1>Torneios</h1>
-<p>Conteúdo dos torneios...</p>
+<!-- ================= TOURNAMENT LIST ================= -->
+<section id="torneios">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Torneios</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+
+    <!-- Scroll box -->
+    <div style="overflow: auto; height:250pt; width:100%; background:#CFFFDC; padding:15px; border-radius:5px;">
+
+      <!-- Example entries -->
+      <b>Jun 2026</b>:
+      <a href="{{ site.baseurl }}/torneios/torneio-jun-2026/" style="color:#005f5f; font-weight:bold;">
+        Torneio de Inverno
+      </a>
+      <br><br>
+
+      <b>Mar 2026</b>:
+      <a href="{{ site.baseurl }}/torneios/torneio-mar-2026/" style="color:#005f5f; font-weight:bold;">
+        Torneio de Verão
+      </a>
+      <br><br>
+
+      <b>Jan 2026</b>:
+      <a href="{{ site.baseurl }}/torneios/torneio-jan-2026/" style="color:#005f5f; font-weight:bold;">
+        Abertura da Temporada
+      </a>
+      <br><br>
+
+    </div>
+
+  </div>
+</section>
