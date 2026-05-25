@@ -4,5 +4,14 @@ title: Equipe
 permalink: /equipe/
 ---
 
-<h1>Equipe</h1>
-<p>Conteúdo da equipe...</p>
+<div class="row">
+  <div class="col-lg-4">
+    <h4>João</h4>
+    <p>Desenvolvedor</p>
+  </div>
+
+  <div class="col-lg-4">
+    <h4>Maria</h4>
+    <p>Organização</p>
+  </div>
+</div>

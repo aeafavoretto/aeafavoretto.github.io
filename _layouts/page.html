@@ -2,14 +2,15 @@
 <html>
   {% include head.html %}
 
-  <body>
+  <body id="page-top">
     {% include nav.html %}
 
-    <section class="bg-light-gray">
+    <section id="{{ page.title | downcase }}" class="bg-light-gray">
       <div class="container">
+
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2>{{ page.title }}</h2>
+            <h2 class="section-heading">{{ page.title }}</h2>
           </div>
         </div>
 
@@ -18,6 +19,7 @@
             {{ content }}
           </div>
         </div>
+
       </div>
     </section>
 
