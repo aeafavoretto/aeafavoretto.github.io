@@ -19,13 +19,25 @@
           <a href="#page-top"></a>
         </li>
         <li class="page-scroll">
-          <a href="{{ site.baseurl }}/#portfolio">Informações</a>
+          {% if page.url == "/" %}
+            <a href="#portfolio">Informações</a>
+          {% else %}
+            <a href="{{ site.baseurl }}/#portfolio">Informações</a>
+          {% endif %}
         </li>
         <li class="page-scroll">
-          <a href="{{ site.baseurl }}/#about">Sobre</a>
+          {% if page.url == "/" %}
+            <a href="#about">Sobre</a>
+          {% else %}
+            <a href="{{ site.baseurl }}/#about">Sobre</a>
+          {% endif %}
         </li>
         <li class="page-scroll">
-          <a href="{{ site.baseurl }}/#contact">Contato</a>
+          {% if page.url == "/" %}
+            <a href="#contact">Contato</a>
+          {% else %}
+            <a href="{{ site.baseurl }}/#contact">Contato</a>
+          {% endif %}
         </li>
         <li class="page-scroll">
           <a href="{{ site.baseurl }}/equipe/">Equipe</a>
