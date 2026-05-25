@@ -9,7 +9,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#page-top">{{ site.title }}</a>
+      {% if page.url == "/" %}
+        {{ site.title }}</a>
+      {% else %}
+        {{ site.baseurl }}/#page-top">{{ site.title }}</a>
+      {% endif %}
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
