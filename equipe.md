@@ -53,7 +53,7 @@ permalink: /equipe/
     <h2>Local de Treino</h2>
     <hr class="star-primary">
 
-    <img src="{{ site.baseurl }}/img/training.jpg"
+    <img src="{{ site.baseurl }}/img/arena241.jpg"
          class="img-responsive center-block"
          alt="Local de treino"
          style="max-width:700px; width:100%; margin-top:20px; border-radius:8px;">

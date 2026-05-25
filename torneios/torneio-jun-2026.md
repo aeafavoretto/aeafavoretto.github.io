@@ -10,7 +10,7 @@ permalink: /torneios/torneio-jun-2026/
 
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2>Torneio Jun26 </h2>
+        <h2>Torneio Jun 26</h2>
         <hr class="star-primary">
       </div>
     </div>
@@ -32,11 +32,23 @@ permalink: /torneios/torneio-jun-2026/
       <div class="col-lg-12">
 
         <iframe 
-          src="https://docs.google.com/spreadsheets/d/e/YOUR_ID/pubhtml"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSvaf-cogc4x_kars4pZszHevcfXoahe1e2pA50-Q00DzL6FDoiOnclebL9--r1aKZzNZ7Qiqb2xTZM/pubhtml"
           width="100%" 
           height="600"
           style="border:none;">
         </iframe>
+
+      </div>
+    </div>
+
+
+    <!-- ================= DOWNLOAD FILE ================= -->
+    <div class="row">
+      <div class="col-lg-12 text-center" style="margin-top:20px;">
+
+        {{ site.baseurl }}/files/torneio-jun-2026.xlsx
+          Baixar tabela (.xlsx)
+        </a>
 
       </div>
     </div>
