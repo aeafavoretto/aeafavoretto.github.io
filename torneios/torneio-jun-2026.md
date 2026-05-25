@@ -41,17 +41,5 @@ permalink: /torneios/torneio-jun-2026/
       </div>
     </div>
 
-
-    <!-- ================= DOWNLOAD FILE ================= -->
-    <div class="row">
-      <div class="col-lg-12 text-center" style="margin-top:20px;">
-
-        {{ site.baseurl }}/files/torneio-jun-2026.xlsx
-          Baixar tabela (.xlsx)
-        </a>
-
-      </div>
-    </div>
-
   </div>
 </section>
