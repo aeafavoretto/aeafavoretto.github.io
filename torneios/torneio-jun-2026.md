@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Torneio Jun 2026
+title: 
 permalink: /torneios/torneio-jun-2026/
 ---
 
