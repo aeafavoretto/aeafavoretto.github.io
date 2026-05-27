@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Torneio Jun 2026
-permalink: /torneios/torneio-jun-2026/
+title: 
+permalink: /torneios/torneio-jan-2026/
 ---
 
 <section id="torneios">
@@ -10,7 +10,7 @@ permalink: /torneios/torneio-jun-2026/
     <!-- TITLE -->
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2>{{ page.title }}</h2>
+        <h2>Torneio Jan 2026</h2>
         <hr class="star-primary">
       </div>
     </div>
