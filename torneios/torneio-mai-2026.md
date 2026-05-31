@@ -78,14 +78,14 @@ let generoSelecionado = "";
 /* === ONEDRIVE EMBED LINKS === */
 const sheetMap = {
   "sub15-masc": "",
-  "sub15-fem":  "https://1drv.ms/x/c/732e38d02ee9cc09/IQDVh7haTrdrTJOLNFiscW7PASMA2tnmrnF3okiCrQlW0NE?e=PdBBaN",
+  "sub15-fem":  "https://1drv.ms/x/c/732e38d02ee9cc09/IQTVh7haTrdrTJOLNFiscW7PAdBZs9iz9NzD6Mx_USdO-I0?em=2&wdAllowInteractivity=False&wdHideHeaders=True&wdInConfigurator=True&edaebf=rslc0",
 
-  "sub17-masc": "https://1drv.ms/x/c/732e38d02ee9cc09/IQB8p3kCTLTbSIZBQMIJDqU3AcG7uScR4poMIxr-AHX-GqY?e=bSmvBI",
-  "sub17-fem":  "https://1drv.ms/x/c/732e38d02ee9cc09/IQASrdS8U-8ZR53fDbfdXwLfAc7-6MibhEU8Nml-br0y4Wo?e=FLdT1L",
+  "sub17-masc": "https://1drv.ms/x/c/732e38d02ee9cc09/IQR8p3kCTLTbSIZBQMIJDqU3ASeGpn6bl9I2pmv7V530KQY?em=2&wdAllowInteractivity=False&wdHideHeaders=True&wdInConfigurator=True&edaebf=rslc0",
+  "sub17-fem":  "https://1drv.ms/x/c/732e38d02ee9cc09/IQQSrdS8U-8ZR53fDbfdXwLfATlBNh-GkCXD6d6LBR1jE-g?em=2&wdAllowInteractivity=False&wdHideHeaders=True&wdInConfigurator=True&edaebf=rslc0",
 
 
-  "inter-masc": "https://1drv.ms/x/c/732e38d02ee9cc09/IQBTIhd-EdBERLPj25jWcEhXAWp67yJRnV3ZPjsuuaxjaEc?e=AaBgJ8",
-  "inter-fem":  "https://1drv.ms/x/c/732e38d02ee9cc09/IQD72Nhr9sPjRKbNsccA5A7vARpvjzyILZWgfVRYRlvLyKc?e=ia950b",
+  "inter-masc": "https://1drv.ms/x/c/732e38d02ee9cc09/IQRTIhd-EdBERLPj25jWcEhXAXLQ40yNBLmAYPBEEi5U-y0?em=2&wdAllowInteractivity=False&wdHideHeaders=True&wdInConfigurator=True&edaebf=rslc0",
+  "inter-fem":  "https://1drv.ms/x/c/732e38d02ee9cc09/IQT72Nhr9sPjRKbNsccA5A7vAfzo05ajF8dflEP_jOfCmss?em=2&wdAllowInteractivity=False&wdHideHeaders=True&wdInConfigurator=True&edaebf=rslc0",
 };
 
 /* === CATEGORY CLICK === */
