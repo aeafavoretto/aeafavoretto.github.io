@@ -9,10 +9,14 @@ permalink: /torneios/torneio-mai-2026/
 
     <!-- TITLE -->
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>2a Etapa Intermediário Masc/Fem  <br>&<br> 2a Etapa Sub-15/Sub-17</h2>
-        <hr class="star-primary">
-      </div>
+        <div class="col-lg-12 text-center">
+            <h2 class="title-lines">
+            <span>2ª Etapa Intermediário Masc/Fem</span>
+            <span>&amp;</span>
+            <span>2ª Etapa Sub-15/Sub-17</span>
+            </h2>
+            <hr class="star-primary">
+        </div>
     </div>
 
     <!-- CATEGORY -->
