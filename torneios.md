@@ -18,7 +18,13 @@ permalink: /torneios/
     <!-- Scroll box -->
     <div style="overflow: auto; height:250pt; width:100%; background:#FFCEB2 ; padding:15px; border-radius:5px;">
 
-      <!-- Example entries -->
+      <b>Maio de 2026</b>:
+      <a href="{{ site.baseurl }}/torneios/torneio-mai-2026/" style="color:#FF5C00; font-weight:bold;">
+        2a Etapa Intermediário Masc/Fem & 2a Etapa Sub-15/Sub-17
+      </a>
+      <br><br>
+
+      <!-- Example entries
       <b>Jun 2026</b>:
       <a href="{{ site.baseurl }}/torneios/torneio-jun-2026/" style="color:#FF5C00; font-weight:bold;">
         Torneio de Junho
@@ -35,7 +41,7 @@ permalink: /torneios/
       <a href="{{ site.baseurl }}/torneios/torneio-jan-2026/" style="color:#FF5C00; font-weight:bold;">
         Torneio de Janeiro
       </a>
-      <br><br>
+      <br><br> -->
 
     </div>
 
