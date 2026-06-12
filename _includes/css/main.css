@@ -527,8 +527,8 @@ footer .footer-below {
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 256px;
+  height: 256px;
   object-fit: cover;
-  border-radius: 50%;
+  /* border-radius: 75%; */
 }
