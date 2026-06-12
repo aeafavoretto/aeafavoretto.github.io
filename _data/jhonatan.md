@@ -1,4 +1,4 @@
 ---
 name: Jhonatan Celestino Fotografia
-img: jhonatan.jpg
+img: jhonatan.png
 ---
