@@ -1,8 +1,7 @@
 ---
 name: Basílio Favoretto
-role: Idealizador e Principal Técnico
+role: Idealizador, Técnico e Professor
 img: basilio.jpg
 alt: Basílio Favoretto
 category: equipe
 ---
-Descrição do membro (opcional).

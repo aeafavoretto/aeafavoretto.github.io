@@ -6,61 +6,90 @@ permalink: /equipe/
 
 <!-- ================= TEAM SECTION ================= -->
 <section id="equipe">
-  <div class="container portfolio-flex-grid">
+  
+  <div class="portfolio-flex-row">
+
+    {% assign membros = site.members | where: "category", "equipe" %}
+    
+    <!-- BASÍLIO (primeira linha sozinho) -->
+    {% for post in membros %}
+      {% if post.name == "Basilio Favoretto" %}
+        <div style="width:100%; text-align:center; margin-bottom:40px;">
+          
+          <img src="{{ site.baseurl }}/img/members/{{ post.img }}"
+              class="img-responsive img-circle"
+              alt="{{ post.alt }}"
+              style="width:200px; height:200px; object-fit:cover; margin:auto;">
+
+          <h4 style="margin-top:15px;">{{ post.name }}</h4>
+          <p class="text-muted">{{ post.role }}</p>
+
+        </div>
+      {% endif %}
+    {% endfor %}
+
+
+    <!-- ================= OUTROS MEMBROS ================= -->
+    {% assign outros = membros | where_exp: "item", "item.name != 'Basilio Favoretto'" | sort: "name" %}
 
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2>Equipe</h2>
-        <hr class="star-primary">
-      </div>
-    </div>
+      {% for post in outros %}
 
-    <div class="portfolio-flex-row">
+        <div class="col-md-4 text-center" style="margin-bottom:40px;">
+          
+          <img src="{{ site.baseurl }}/img/members/{{ post.img }}"
+               onerror="this.onerror=null; this.src='{{ site.baseurl }}/img/members/aeasc.jpg';"
+               class="img-responsive img-circle"
+               alt="{{ post.alt }}"
+               style="width:200px; height:200px; object-fit:cover; margin:auto;">
 
-      {% for post in site.members %}
-        {% if post.category == "equipe" %}
+          <h4 style="margin-top:15px;">{{ post.name }}</h4>
+          <p class="text-muted">{{ post.role }}</p>
 
-        <div class="portfolio-flex-item portfolio-item" style="margin-bottom: 40px;">
-          <div class="text-center">
-
-            <!-- Portrait -->
-            <img src="{{ site.baseurl }}/img/members/{{ post.img }}"
-                 class="img-responsive img-circle"
-                 alt="{{ post.alt }}"
-                 style="width:200px; height:200px; object-fit:cover; margin:auto;">
-
-            <!-- Name -->
-            <h4 style="margin-top:15px;">{{ post.name }}</h4>
-
-            <!-- Role -->
-            <p class="text-muted">{{ post.role }}</p>
-
-          </div>
         </div>
 
+        {% if forloop.index % 3 == 0 and forloop.last == false %}
+          </div>
+          <div class="row">
         {% endif %}
-      {% endfor %}
 
+      {% endfor %}
     </div>
+
   </div>
+
+
 </section>
 
 
-<!-- ================= TRAINING PLACE SECTION ================= -->
-<section id="treino" style="padding:60px 0; background:#ffffff;">
+
+!-- ================= SPONSORS SECTION ================= -->
+<section id="patrocinadores" style="padding:60px 0; background:#ffffff;">
   <div class="container text-center">
 
-    <h2>Local de Treino</h2>
+    <h2>Patrocinadores</h2>
     <hr class="star-primary">
 
-    <img src="{{ site.baseurl }}/img/arena241.jpg"
-         class="img-responsive center-block"
-         alt="Local de treino"
-         style="max-width:700px; width:100%; margin-top:20px; border-radius:8px;">
+    {% assign sponsors = site.sponsors | sort: "name" %}
 
-    <p class="text-muted" style="margin-top:20px;">
-      Nosso espaço de treinamento onde os atletas se desenvolvem e se preparam para os torneios.
-    </p>
+    <div class="sponsor-slider">
+      <div class="sponsor-track">
+
+        <!-- LOOP DUPLICADO PARA EFEITO INFINITO -->
+        {% for sponsor in sponsors %}
+          <div class="sponsor-item">
+            {{ site.baseurl }}/img/sponsors/{{ sponsor.img }}
+          </div>
+        {% endfor %}
+
+        {% for sponsor in sponsors %}
+          <div class="sponsor-item">
+            {{ site.baseurl }}/img/sponsors/{{ sponsor.img }}
+          </div>
+        {% endfor %}
+
+      </div>
+    </div>
 
   </div>
 </section>
