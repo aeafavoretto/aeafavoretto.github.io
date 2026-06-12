@@ -16,8 +16,9 @@
           <ul class="list-inline">
             {% for network in site.social %}
             <li>
-              <a href="{{ network.url }}" class="btn-social btn-outline"><i
-                  class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
+              <a href="{{ network.url }}" class="btn-social btn-outline">
+                <i class="fa-brands fa-fw fa-{{ network.title }}"></i>
+              </a>
             </li>
             {% endfor %}
           </ul>
@@ -29,6 +30,41 @@
       </div>
     </div>
   </div>
+
+  <!-- ✅ NOVA SEÇÃO DE PATROCINADORES -->
+  {% assign sponsors = site.data.sponsors %}
+
+  {% if sponsors and sponsors.size > 0 %}
+  <div class="footer-sponsors">
+    <div class="container">
+      <h3>Patrocinadores</h3>
+
+      <div class="sponsor-slider">
+        <div class="sponsor-track">
+
+          {% for sponsor in sponsors %}
+          <div class="sponsor-item">
+            <img src="{{ '/img/sponsors/' | append: sponsor.img | relative_url }}"
+                 class="sponsor-logo"
+                 alt="{{ sponsor.name }}">
+          </div>
+          {% endfor %}
+
+          {% for sponsor in sponsors %}
+          <div class="sponsor-item">
+            <img src="{{ '/img/sponsors/' | append: sponsor.img | relative_url }}"
+                 class="sponsor-logo"
+                 alt="{{ sponsor.name }}">
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  {% endif %}
+
   <div class="footer-below">
     <div class="container">
       <div class="row">
@@ -39,10 +75,3 @@
     </div>
   </div>
 </footer>
-
-<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-<div class="scroll-top page-scroll visible-xs visible-sm">
-  <a class="btn btn-primary" href="#page-top">
-    <i class="fa fa-chevron-up"></i>
-  </a>
-</div>
