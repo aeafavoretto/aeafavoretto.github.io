@@ -4,5 +4,5 @@ modal-id: 2
 date: 2014-07-17
 img: equipe.png
 alt: image-alt
-description: A Associação de Esportes de Areia em São Carlos (AEA) reúne professores apaixonados por vôlei, com experiência em quadra e praia. Mais do que ensinar técnicas, eles compartilham conhecimento, incentivam a evolução e criam um ambiente acolhedor e motivador. 👉 Conheça nossa [equipe](/equipe) e saiba mais acessando o link!
+description: A Associação de Esportes de Areia em São Carlos (AEA) reúne professores apaixonados por vôlei, com experiência em quadra e praia. Mais do que ensinar técnicas, eles compartilham conhecimento, incentivam a evolução e criam um ambiente acolhedor e motivador. 👉 Conheça nossa [equipe](/equipe)!
 ---
