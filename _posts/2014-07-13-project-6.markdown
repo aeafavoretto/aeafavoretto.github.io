@@ -4,8 +4,5 @@ modal-id: 6
 date: 2014-07-15
 img: apoio.png
 alt: image-alt
-# project-date: April 2014
-# client: Start Bootstrap
-# category: Web Development
-description: Na Associação de Esportes de Areia em São Carlos (AEA), sabemos que grandes projetos só se constroem com grandes parcerias — e somos imensamente gratos aos nossos apoiadores, que tornam tudo isso possível! Nosso agradecimento especial à Arena 241, que disponibiliza o espaço e horários para nossos treinamentos. Um local com infraestrutura de quadras e ambiente simplesmente invejáveis, que proporciona a melhor experiência para atletas de todos os níveis, elevando a qualidade dos nossos treinos e encontros. Também deixamos nosso profundo reconhecimento à Prefeitura, que há muito tempo acredita no projeto e contribui ativamente com o fomento ao esporte, permitindo que a AEA cresça, alcance mais pessoas e fortaleça o vôlei de areia na cidade. 🤝 É graças a esse apoio que seguimos evoluindo, formando atletas e criando uma comunidade apaixonada pelo esporte. Juntos, seguimos construindo algo cada vez maior para o vôlei de areia em São Carlos! 🏐💛
+description:  AEA conta com o apoio da Arena 241 e da Prefeitura de São Carlos, além de profissionais parceiros que contribuem em nossos torneios. 🤝 Juntos, fortalecemos o vôlei de areia na cidade!
 ---

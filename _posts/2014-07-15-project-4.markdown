@@ -4,8 +4,5 @@ modal-id: 4
 date: 2014-07-15
 img: torneios.png
 alt: image-alt
-# project-date: April 2014
-# client: Start Bootstrap
-# category: Web Development
-description: Na Associação de Esportes de Areia em São Carlos (AEA), o vôlei de areia vai muito além dos treinos — ele ganha vida em torneios que movimentam a cidade e fortalecem a comunidade esportiva! Ao longo do ano, organizamos diversos torneios em São Carlos, pensados para todos os perfis de atletas - iniciantes, intermediário, avançados e inclusive mistos - reunindo diferentes níveis em um ambiente dinâmico e inclusivo. Esses eventos são uma oportunidade incrível para colocar o aprendizado em prática, fazer novas amizades, vivenciar a competição de forma saudável e se apaixonar ainda mais pelo esporte. Deixamos um agradecimento especial à Arena 241, que apoia a AEA disponibilizando o espaço para a realização dos torneios e contribuindo diretamente para o crescimento do vôlei de areia na cidade. 👉 Fique ligado! Vamos divulgar todas as novidades e informações sobre os próximos torneios por aqui e também em nossas redes sociais. Seguimos juntos, fomentando a cultura do vôlei de areia em São Carlos e toda a região!
+description: Na AEA, organizamos torneios de vôlei de areia ao longo do ano para iniciantes, intermediários e avançados, promovendo competição, integração e evolução no esporte. 👉 Fique ligado nas próximas datas e participe!
 ---
