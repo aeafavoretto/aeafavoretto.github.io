@@ -4,5 +4,5 @@ modal-id: 4
 date: 2014-07-15
 img: torneios.png
 alt: image-alt
-description: Na AEA, organizamos torneios de vôlei de areia ao longo do ano para iniciantes, intermediários e avançados, promovendo competição, integração e evolução no esporte. 👉 Fique ligado nas próximas datas e participe!
+description: Na AEA, organizamos torneios de vôlei de praia ao longo do ano para iniciantes, intermediários e avançados, promovendo competição, integração e evolução no esporte. 👉 Fique ligado nas próximas datas e participe!
 ---

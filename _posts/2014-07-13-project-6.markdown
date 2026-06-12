@@ -4,5 +4,5 @@ modal-id: 6
 date: 2014-07-15
 img: apoio.png
 alt: image-alt
-description:  AEA conta com o apoio da Arena 241 e da Prefeitura de São Carlos, além de profissionais parceiros que contribuem em nossos torneios. 🤝 Juntos, fortalecemos o vôlei de areia na cidade!
+description:  AEA conta com o apoio da Arena 241 e da Prefeitura de São Carlos, além de profissionais parceiros que contribuem em nossos torneios. 🤝 Juntos, fortalecemos o vôlei de praia na cidade!
 ---
