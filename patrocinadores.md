@@ -1,15 +1,15 @@
 ---
 layout: page
 title: 
-permalink: /patrocinadores/
+permalink: /apoio/
 ---
 
 <!-- ================= SPONSORS SECTION ================= -->
-<section id="patrocinadores">
-<!-- <section id="patrocinadores" style="padding:60px 0; background:#ffffff;"> -->
+<section id="apoio">
+<!-- <section id="apoio" style="padding:60px 0; background:#ffffff;"> -->
   <div class="container text-center">
 
-    <h2>Patrocinadores</h2>
+    <h2>Apoio</h2>
     <hr class="star-primary">
 
     {% if site.sponsors %}
