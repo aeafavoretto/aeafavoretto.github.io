@@ -6,32 +6,30 @@
 
     {% assign sponsors = site.data.sponsors %}
 
-    <!-- APOIADOR DE DESTAQUE -->
-    {% for sponsor in sponsors %}
-      {% if sponsor.name == "Nome do Apoiador Principal" %}
+    <!-- DESTAQUE -->
+    {% if sponsors.size > 0 %}
+      {% assign principal = sponsors[0] %}
 
-        <div style="margin-bottom:60px;">
+      <div style="margin-bottom:60px;">
 
-          <img src="{{ '/img/sponsors/' | append: sponsor.img | relative_url }}"
+        <a href="{{ principal.url }}" target="_blank">
+          <img src="{{ '/img/sponsors/' | append: principal.img | relative_url }}"
                onerror="this.onerror=null;this.src='{{ '/img/sponsors/default.png' | relative_url }}';"
-               style="width:220px;height:220px;object-fit:contain;display:block;margin:0 auto;">
+               style="max-width:220px; display:block; margin:0 auto;">
+        </a>
 
-          <h4 style="margin-top:15px;">{{ sponsor.name }}</h4>
+        <h4 style="margin-top:15px;">{{ principal.name }}</h4>
 
-        </div>
-
-      {% endif %}
-    {% endfor %}
+      </div>
+    {% endif %}
 
     <!-- SEPARADOR -->
     <hr style="margin:40px 0; border-top:1px solid #ddd;">
 
-    <!-- OUTROS APOIADORES -->
-    {% assign outros = sponsors | where_exp: "item", "item.name != 'Nome do Apoiador Principal'" | sort: "name" %}
-
+    <!-- OUTROS -->
     <div>
 
-      {% for sponsor in outros %}
+      {% for sponsor in sponsors offset:1 %}
 
         <div style="
           display:inline-block;
@@ -42,9 +40,11 @@
           margin-bottom:40px;
         ">
 
-          <img src="{{ '/img/sponsors/' | append: sponsor.img | relative_url }}"
-               onerror="this.onerror=null;this.src='{{ '/img/sponsors/default.png' | relative_url }}';"
-               style="width:180px;height:180px;object-fit:contain;display:block;margin:0 auto;">
+          <a href="{{ sponsor.url }}" target="_blank">
+            <img src="{{ '/img/sponsors/' | append: sponsor.img | relative_url }}"
+                 onerror="this.onerror=null;this.src='{{ '/img/sponsors/default.png' | relative_url }}';"
+                 style="max-width:180px; display:block; margin:0 auto;">
+          </a>
 
           <h5 style="margin-top:10px;">{{ sponsor.name }}</h5>
 
@@ -56,3 +56,4 @@
 
   </div>
 </section>
+``

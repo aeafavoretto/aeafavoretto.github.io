@@ -1,18 +1,24 @@
 - name: Prefeitura Municipal de São Carlos
   img: prefeitura.jpg
+  url: https://saocarlos.sp.gov.br/
 - name: Arena 241 Beach Club
   img: arena241.jpg
+  url: https://www.instagram.com/arena241_/
 - name: Kalhandra Uniformes
   img: kalhandra.jpg
+  url: https://www.instagram.com/kalhandrakl/
 - name: Agora É Esporte Play
   img: agoraesporte.jpg
+  url: https://www.instagram.com/agoraeesporteplay/
 - name: Jhonatan Celestino Fotografia
   img: jhonatan.png
+  url: https://www.instagram.com/jhonatan_celestino14/
 - name: Amare - Reabilitação e Ensino
   img: amare.jpg
-- name: Arena 241 Beach Club
-  img: arena241.jpg
+  url: https://www.amarereabilitacaoensino.com/
 - name: Cuhidar Saúde
   img: cuhidar.jpg
+  url: https://www.instagram.com/cuhidar.saude/
 - name: Matheus Fernandes Fisiterapeuta
   img: matheusfernandes.jpg
+  url: https://www.instagram.com/ft.matheusfernandes/
