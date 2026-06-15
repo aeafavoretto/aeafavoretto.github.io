@@ -3,6 +3,8 @@
 
     <h2>Apoio</h2>
     <hr class="star-primary">
+    
+    <hr style="margin:40px 0; border-top:1px solid #ddd;">
 
     {% assign sponsors = site.data.sponsors %}
 
@@ -22,7 +24,7 @@
 
         </div>
 
-        <hr style="margin:40px 0; border-top:1px solid #ddd;">
+        <!-- <hr style="margin:40px 0; border-top:1px solid #ddd;"> -->
 
         <div>
 
