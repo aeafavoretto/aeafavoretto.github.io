@@ -1,7 +1,7 @@
 ---
 name: Teodora (Teo)
-role: Professora
-img: teo.png
+role: Monitora
+img: teo.jpg
 alt: Teodora (Teo)
 category: equipe
 ---

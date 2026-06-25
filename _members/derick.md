@@ -1,6 +1,6 @@
 ---
 name: Derick
-role: Professor
+role: Monitor
 img: derick.jpg
 alt: Derick
 category: equipe

@@ -1,6 +1,6 @@
 ---
 name: Kleberson (Krebi)
-role: Professor
+role: Monitor
 img: kleberson.jpg
 alt: Kleberson (Krebi)
 category: equipe

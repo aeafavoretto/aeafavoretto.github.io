@@ -1,6 +1,6 @@
 ---
 name: Kariel
-role: Professor
+role: Monitor
 img: kariel.jpg
 alt: Kariel
 category: equipe

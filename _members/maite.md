@@ -1,6 +1,6 @@
 ---
 name: Maitê
-role: Professora
+role: Monitora
 img: maite.jpg
 alt: Maitê
 category: equipe

@@ -1,7 +1,7 @@
 ---
 name: Giovana (Gi)
-role: Professora
-img: gi.png
+role: Monitora
+img: gi.jpg
 alt: Giovana (Gi)
 category: equipe
 ---
