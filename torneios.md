@@ -19,7 +19,7 @@ permalink: /torneios/
     <div style="overflow: auto; height:250pt; width:100%; background:#FFCEB2 ; padding:15px; border-radius:5px;">
 
       <b>Junho de 2026</b>:
-      <a href="{{ site.baseurl }}/torneios/torneio-mai-2026/" style="color:#FF5C00; font-weight:bold;">
+      <a href="{{ site.baseurl }}/torneios/torneio-jun-2026/" style="color:#FF5C00; font-weight:bold;">
         2ª Etapa do 4º Circuito AEA de Vôlei de Praia
       </a>
       <br><br>
