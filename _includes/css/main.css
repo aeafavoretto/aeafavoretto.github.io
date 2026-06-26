@@ -574,15 +574,36 @@ footer .footer-below {
 
 
 /* Popup box */
+
 .popup-box {
-  background: #ff9148;
-  padding: 30px;
+  background: #fff;
+  padding: 20px;
   border-radius: 10px;
+
   max-width: 500px;
   width: 90%;
+
+  /* ✅ ESSENCIAL PARA MOBILE */
+  max-height: 80vh;          /* nunca passa da tela */
+  overflow-y: auto;          /* ativa scroll interno */
+
   text-align: left;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
 }
+
+/* ✅ Ajustes específicos para celular */
+@media (max-width: 600px) {
+  .popup-box {
+    width: 95%;
+    max-height: 85vh;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .popup-box h2 {
+    font-size: 20px;
+  }
+}
+
 
 .popup-box ul {
   margin-left: 20px;
