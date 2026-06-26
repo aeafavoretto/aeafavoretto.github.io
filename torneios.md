@@ -18,9 +18,9 @@ permalink: /torneios/
     <!-- Scroll box -->
     <div style="overflow: auto; height:250pt; width:100%; background:#FFCEB2 ; padding:15px; border-radius:5px;">
 
-      <b>Maio de 2026</b>:
+      <b>Junho de 2026</b>:
       <a href="{{ site.baseurl }}/torneios/torneio-mai-2026/" style="color:#FF5C00; font-weight:bold;">
-        2a Etapa Intermediário Masc/Fem & 2a Etapa Sub-15/Sub-17
+        2ª Etapa do 4º Circuito AEA de Vôlei de Praia
       </a>
       <br><br>
 
