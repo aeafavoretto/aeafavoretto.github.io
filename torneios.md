@@ -24,25 +24,6 @@ permalink: /torneios/
       </a>
       <br><br>
 
-      <!-- Example entries
-      <b>Jun 2026</b>:
-      <a href="{{ site.baseurl }}/torneios/torneio-jun-2026/" style="color:#FF5C00; font-weight:bold;">
-        Torneio de Junho
-      </a>
-      <br><br>
-
-      <b>Mar 2026</b>:
-      <a href="{{ site.baseurl }}/torneios/torneio-mar-2026/" style="color:#FF5C00; font-weight:bold;">
-        Torneio de Março
-      </a>
-      <br><br>
-
-      <b>Jan 2026</b>:
-      <a href="{{ site.baseurl }}/torneios/torneio-jan-2026/" style="color:#FF5C00; font-weight:bold;">
-        Torneio de Janeiro
-      </a>
-      <br><br> -->
-
     </div>
 
   </div>
