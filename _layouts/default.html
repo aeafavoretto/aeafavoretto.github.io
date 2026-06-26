@@ -50,31 +50,47 @@
 
   <!-- Popup Script -->
   
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    var path = window.location.pathname;
-    var overlay = document.getElementById("popup-overlay");
+    const overlay = document.getElementById("popup-overlay");
 
-    if (overlay && (path === "/" || path.endsWith("index.html"))) {
-      overlay.style.display = "flex";
-      document.body.classList.add("popup-open");
+    // Debug (IMPORTANTE)
+    console.log("Overlay found:", overlay);
+    console.log("Path:", window.location.pathname);
+
+    // Se NÃO encontrou o popup → não trava a página
+    if (!overlay) {
+      document.body.style.overflow = "auto";
+      return;
     }
+
+    // Mostrar popup (GARANTIDO)
+    overlay.style.display = "flex";
+    document.body.style.overflow = "hidden";
   });
 
   function closePopup() {
-    var overlay = document.getElementById("popup-overlay");
-    overlay.style.display = "none";
-    document.body.classList.remove("popup-open");
-  }
+    const overlay = document.getElementById("popup-overlay");
 
-  document.addEventListener("click", function (e) {
-    var overlay = document.getElementById("popup-overlay");
-    if (e.target === overlay) {
-      closePopup();
+    if (overlay) {
+      overlay.style.display = "none";
     }
 
+    // Sempre restaura scroll
+    document.body.style.overflow = "auto";
+  }
+
+  // Fecha clicando fora
+  document.addEventListener("click", function (e) {
+    const overlay = document.getElementById("popup-overlay");
+
+    if (overlay && e.target === overlay) {
+      closePopup();
+    }
   });
 </script>
+
 
 
 </body>
