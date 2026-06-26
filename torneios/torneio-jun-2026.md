@@ -9,12 +9,12 @@ permalink: /torneios/torneio-jun-2026/
 
     <!-- TITLE -->
     <div class="row">
-        <div class="col-lg-12 text-center">
-            <h2 class="title-lines">
-            <span>2ª Etapa do 4º Circuito AEA de Vôlei de Praia</span>
-            </h2>
-            <hr class="star-primary">
-        </div>
+      <div class="col-lg-12 text-center">
+        <h2 class="title-lines">
+          <span>2ª Etapa do 4º Circuito AEA de Vôlei de Praia</span>
+        </h2>
+        <hr class="star-primary">
+      </div>
     </div>
 
     <!-- REGULAMENTO -->
@@ -22,7 +22,8 @@ permalink: /torneios/torneio-jun-2026/
       <div class="col-lg-12">
         <h4>Regulamento</h4>
 
-        <button class="btn btn-default regulamento-btn" onclick="setRegulamento('reg', this)">
+        <button class="btn btn-default regulamento-btn"
+          onclick="setRegulamento('reg', this)">
           Regulamento
         </button>
       </div>
@@ -38,7 +39,7 @@ permalink: /torneios/torneio-jun-2026/
         <button class="btn btn-default category-btn" onclick="setCategoria('sub19', this)">Sub-19</button>
         <button class="btn btn-default category-btn" onclick="setCategoria('sub21', this)">Sub-21</button>
         <button class="btn btn-default category-btn" onclick="setCategoria('quali', this)">Quali</button>
-        <button class="btn btn-default category-btn" onclick="setCategoria('open',  this)">Open</button>
+        <button class="btn btn-default category-btn" onclick="setCategoria('open', this)">Open</button>
       </div>
     </div>
 
@@ -64,7 +65,6 @@ permalink: /torneios/torneio-jun-2026/
     <!-- IFRAME -->
     <div class="row">
       <div class="col-lg-12 text-center">
-
         <iframe id="bracket-frame"
           width="100%"
           height="700"
@@ -72,7 +72,6 @@ permalink: /torneios/torneio-jun-2026/
           scrolling="yes"
           style="border:none; display:none;">
         </iframe>
-
       </div>
     </div>
 
@@ -93,83 +92,110 @@ let categoriaSelecionada = "";
 let generoSelecionado = "";
 
 /* === LINK DO REGULAMENTO === */
-const regulamentoLink = "https://1drv.ms/x/c/b894b1671d1e3831/IQTRBNrxqSUXQptynbVlWKFSAbrqZRBGV5aOQmT0hcSsZNs?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E";
+const regulamentoLink = "COLE_AQUI_SEU_LINK_DO_REGULAMENTO";
 
-/* === ONEDRIVE EMBED LINKS === */
+/* === MAPA === */
 const sheetMap = {
   "sub15-masc": "",
-  "sub15-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQS999Xk9oDsRZaWtuAyTDcmAQfbWMnEkULavtbZzDYfPcI?em=2",
+  "sub15-fem": "https://1drv.ms/x/c/b894b1671d1e3831/IQS999Xk9oDsRZaWtuAyTDcmAQfbWMnEkULavtbZzDYfPcI?em=2",
 
   "sub17-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQSg-BBiHhjvSJiZEAZ7_w4SAYU-FRZtfUl5RetruLn_saM?em=2",
-  "sub17-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQSAllKj_CuFQo68V79ABewMAY94hmXwh6OgD607dF2cTtw?em=2",
+  "sub17-fem": "https://1drv.ms/x/c/b894b1671d1e3831/IQSAllKj_CuFQo68V79ABewMAY94hmXwh6OgD607dF2cTtw?em=2",
 
   "sub19-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQR2G9GULCOGTZb5N6SSexzpAek39c4HOr1s_BG0dWMjSHU?em=2",
-  "sub19-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQRprjv4Jc_2S7ej48j1Cz97AVVY6Yj5fghb0M7-vAQoOqU?em=2",
+  "sub19-fem": "https://1drv.ms/x/c/b894b1671d1e3831/IQRprjv4Jc_2S7ej48j1Cz97AVVY6Yj5fghb0M7-vAQoOqU?em=2",
 
   "sub21-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRzueyN3_ioSKpr7BtGJorXARiLOY5-x3K2THSCyCrahgo?em=2",
-  "sub21-fem":  "",
+  "sub21-fem": "",
 
   "quali-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRGfggDR-jVQqIFk-EzCutHAYHkBuh6-5R83sHXQ_A4svU?em=2",
-  "quali-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQRP3FbZKKX1SJ1F8nrmC822Abc0G9jcKnf-2yBM-HLPc-s?em=2",
+  "quali-fem": "https://1drv.ms/x/c/b894b1671d1e3831/IQRP3FbZKKX1SJ1F8nrmC822Abc0G9jcKnf-2yBM-HLPc-s?em=2",
 
   "open-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRGfggDR-jVQqIFk-EzCutHAYHkBuh6-5R83sHXQ_A4svU?em=2",
-  "open-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQRP3FbZKKX1SJ1F8nrmC822Abc0G9jcKnf-2yBM-HLPc-s?em=2",
+  "open-fem": "https://1drv.ms/x/c/b894b1671d1e3831/IQRP3FbZKKX1SJ1F8nrmC822Abc0G9jcKnf-2yBM-HLPc-s?em=2",
 };
 
-/* === REGULAMENTO CLICK === */
+/* === REGULAMENTO (TOGGLE) === */
 function setRegulamento(reg, element) {
-  regulamentoSelecionado = reg;
-
-  // remove active de TODOS botões
-  document.querySelectorAll("button").forEach(btn => {
-    btn.classList.remove("active");
-  });
-
-  element.classList.add("active");
-
-  // limpa seleção
-  categoriaSelecionada = "";
-  generoSelecionado = "";
 
   const iframe = document.getElementById("bracket-frame");
   const message = document.getElementById("message");
 
-  iframe.src = regulamentoLink;
-  iframe.style.display = "block";
-  message.style.display = "none";
+  if (regulamentoSelecionado === reg) {
+    regulamentoSelecionado = "";
+    element.classList.remove("active");
+
+    iframe.style.display = "none";
+    message.style.display = "block";
+  } else {
+    regulamentoSelecionado = reg;
+
+    document.querySelectorAll("button").forEach(btn => {
+      btn.classList.remove("active");
+    });
+
+    element.classList.add("active");
+
+    categoriaSelecionada = "";
+    generoSelecionado = "";
+
+    iframe.src = regulamentoLink;
+    iframe.style.display = "block";
+    message.style.display = "none";
+  }
 }
 
-/* === CATEGORY CLICK === */
+/* === CATEGORY (TOGGLE) === */
 function setCategoria(cat, element) {
-  categoriaSelecionada = cat;
 
-  document.querySelectorAll(".category-btn").forEach(btn => {
-    btn.classList.remove("active");
-  });
+  if (categoriaSelecionada === cat) {
+    categoriaSelecionada = "";
+    element.classList.remove("active");
+  } else {
+    categoriaSelecionada = cat;
 
-  element.classList.add("active");
+    document.querySelectorAll(".category-btn").forEach(btn => {
+      btn.classList.remove("active");
+    });
+
+    element.classList.add("active");
+  }
+
   updateBracket();
 }
 
-/* === GENDER CLICK === */
+/* === GENDER (TOGGLE) === */
 function setGenero(gen, element) {
-  generoSelecionado = gen;
 
-  document.querySelectorAll(".gender-btn").forEach(btn => {
-    btn.classList.remove("active");
-  });
+  if (generoSelecionado === gen) {
+    generoSelecionado = "";
+    element.classList.remove("active");
+  } else {
+    generoSelecionado = gen;
 
-  element.classList.add("active");
+    document.querySelectorAll(".gender-btn").forEach(btn => {
+      btn.classList.remove("active");
+    });
+
+    element.classList.add("active");
+  }
+
   updateBracket();
 }
 
-/* === UPDATE IFRAME === */
+/* === UPDATE === */
 function updateBracket() {
-  if (!categoriaSelecionada || !generoSelecionado) return;
+
+  const iframe = document.getElementById("bracket-frame");
+  const message = document.getElementById("message");
+
+  if (!categoriaSelecionada || !generoSelecionado) {
+    iframe.style.display = "none";
+    message.style.display = "block";
+    return;
+  }
 
   const key = categoriaSelecionada + "-" + generoSelecionado;
-  const iframe = document.getElementById("bracket-frame");
-  const message = document.getElementById("message");
 
   if (sheetMap[key]) {
     iframe.src = sheetMap[key];
