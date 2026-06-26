@@ -575,7 +575,7 @@ footer .footer-below {
 
 /* Popup box */
 .popup-box {
-  background: #E05A00;
+  background: #ff9148;
   padding: 30px;
   border-radius: 10px;
   max-width: 500px;
@@ -586,6 +586,10 @@ footer .footer-below {
 
 .popup-box ul {
   margin-left: 20px;
+}
+
+.popup-box {
+  font-size: 18px; /* padrão maior */
 }
 
 .popup-box h2 {
