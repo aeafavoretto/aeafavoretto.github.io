@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 
-permalink: /torneios/torneio-mai-2026/
+permalink: /torneios/torneio-jun-2026/
 ---
 
 <section id="torneios">
