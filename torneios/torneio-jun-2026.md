@@ -17,6 +17,17 @@ permalink: /torneios/torneio-jun-2026/
         </div>
     </div>
 
+    <!-- REGULAMENTO -->
+    <div class="row text-center" style="margin-bottom:20px;">
+      <div class="col-lg-12">
+        <h4>Regulamento</h4>
+
+        <button class="btn btn-default regulamento-btn" onclick="setRegulamento('reg', this)">
+          Regulamento
+        </button>
+      </div>
+    </div>
+
     <!-- CATEGORY -->
     <div class="row text-center" style="margin-bottom:20px;">
       <div class="col-lg-12">
@@ -45,7 +56,7 @@ permalink: /torneios/torneio-jun-2026/
     <div class="row">
       <div class="col-lg-12 text-center">
         <p id="message" class="text-muted">
-          Selecione uma categoria e uma modalidade para visualizar a tabela.
+          Selecione uma categoria e uma modalidade ou clique em Regulamento.
         </p>
       </div>
     </div>
@@ -77,29 +88,56 @@ permalink: /torneios/torneio-jun-2026/
 </style>
 
 <script>
+let regulamentoSelecionado = "";
 let categoriaSelecionada = "";
 let generoSelecionado = "";
+
+/* === LINK DO REGULAMENTO === */
+const regulamentoLink = "https://1drv.ms/x/c/b894b1671d1e3831/IQTRBNrxqSUXQptynbVlWKFSAbrqZRBGV5aOQmT0hcSsZNs?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E";
 
 /* === ONEDRIVE EMBED LINKS === */
 const sheetMap = {
   "sub15-masc": "",
-  "sub15-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQS999Xk9oDsRZaWtuAyTDcmAQfbWMnEkULavtbZzDYfPcI?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
+  "sub15-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQS999Xk9oDsRZaWtuAyTDcmAQfbWMnEkULavtbZzDYfPcI?em=2",
 
-  "sub17-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQSg-BBiHhjvSJiZEAZ7_w4SAYU-FRZtfUl5RetruLn_saM?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
-  "sub17-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQSAllKj_CuFQo68V79ABewMAY94hmXwh6OgD607dF2cTtw?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
+  "sub17-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQSg-BBiHhjvSJiZEAZ7_w4SAYU-FRZtfUl5RetruLn_saM?em=2",
+  "sub17-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQSAllKj_CuFQo68V79ABewMAY94hmXwh6OgD607dF2cTtw?em=2",
 
-  "sub19-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQR2G9GULCOGTZb5N6SSexzpAek39c4HOr1s_BG0dWMjSHU?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
-  "sub19-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQRprjv4Jc_2S7ej48j1Cz97AVVY6Yj5fghb0M7-vAQoOqU?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
+  "sub19-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQR2G9GULCOGTZb5N6SSexzpAek39c4HOr1s_BG0dWMjSHU?em=2",
+  "sub19-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQRprjv4Jc_2S7ej48j1Cz97AVVY6Yj5fghb0M7-vAQoOqU?em=2",
 
-  "sub21-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRzueyN3_ioSKpr7BtGJorXARiLOY5-x3K2THSCyCrahgo?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
+  "sub21-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRzueyN3_ioSKpr7BtGJorXARiLOY5-x3K2THSCyCrahgo?em=2",
   "sub21-fem":  "",
 
-  "quali-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRGfggDR-jVQqIFk-EzCutHAYHkBuh6-5R83sHXQ_A4svU?em=2&wdAllowInteractivity=False&ActiveCell=%27Duplas_Quali%27!C12&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
-  "quali-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQRP3FbZKKX1SJ1F8nrmC822Abc0G9jcKnf-2yBM-HLPc-s?em=2&wdAllowInteractivity=False&ActiveCell=%27Duplas_Quali%27!A1&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
+  "quali-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRGfggDR-jVQqIFk-EzCutHAYHkBuh6-5R83sHXQ_A4svU?em=2",
+  "quali-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQRP3FbZKKX1SJ1F8nrmC822Abc0G9jcKnf-2yBM-HLPc-s?em=2",
 
-  "open-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRGfggDR-jVQqIFk-EzCutHAYHkBuh6-5R83sHXQ_A4svU?em=2&wdAllowInteractivity=False&ActiveCell=%27Duplas%27!A1&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
-  "open-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQRP3FbZKKX1SJ1F8nrmC822Abc0G9jcKnf-2yBM-HLPc-s?em=2&wdAllowInteractivity=False&ActiveCell=%27Duplas%27!A1&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
+  "open-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRGfggDR-jVQqIFk-EzCutHAYHkBuh6-5R83sHXQ_A4svU?em=2",
+  "open-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQRP3FbZKKX1SJ1F8nrmC822Abc0G9jcKnf-2yBM-HLPc-s?em=2",
 };
+
+/* === REGULAMENTO CLICK === */
+function setRegulamento(reg, element) {
+  regulamentoSelecionado = reg;
+
+  // remove active de TODOS botões
+  document.querySelectorAll("button").forEach(btn => {
+    btn.classList.remove("active");
+  });
+
+  element.classList.add("active");
+
+  // limpa seleção
+  categoriaSelecionada = "";
+  generoSelecionado = "";
+
+  const iframe = document.getElementById("bracket-frame");
+  const message = document.getElementById("message");
+
+  iframe.src = regulamentoLink;
+  iframe.style.display = "block";
+  message.style.display = "none";
+}
 
 /* === CATEGORY CLICK === */
 function setCategoria(cat, element) {
@@ -127,12 +165,14 @@ function setGenero(gen, element) {
 
 /* === UPDATE IFRAME === */
 function updateBracket() {
+  if (!categoriaSelecionada || !generoSelecionado) return;
+
   const key = categoriaSelecionada + "-" + generoSelecionado;
   const iframe = document.getElementById("bracket-frame");
   const message = document.getElementById("message");
 
   if (sheetMap[key]) {
-    iframe.src = sheetMap[key]; // ✅ direct embed link only
+    iframe.src = sheetMap[key];
     iframe.style.display = "block";
     message.style.display = "none";
   }
