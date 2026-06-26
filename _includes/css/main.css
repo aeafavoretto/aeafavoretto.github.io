@@ -575,14 +575,23 @@ footer .footer-below {
 
 /* Popup box */
 .popup-box {
-  background: #ffffff;
+  background: #E05A00;
   padding: 30px;
   border-radius: 10px;
   max-width: 500px;
   width: 90%;
-  text-align: center;
+  text-align: left;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
 }
+
+.popup-box ul {
+  margin-left: 20px;
+}
+
+.popup-box h2 {
+  text-align: center;
+}
+
 
 /* Disable scrolling when popup is open */
 body.popup-open {
