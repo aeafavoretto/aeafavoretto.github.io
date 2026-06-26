@@ -62,9 +62,11 @@ permalink: /torneios/torneio-jun-2026/
       </div>
     </div>
 
-    <!-- IFRAME -->
+    <!-- DISPLAY -->
     <div class="row">
       <div class="col-lg-12 text-center">
+
+        <!-- IFRAME -->
         <iframe id="bracket-frame"
           width="100%"
           height="700"
@@ -72,6 +74,11 @@ permalink: /torneios/torneio-jun-2026/
           scrolling="yes"
           style="border:none; display:none;">
         </iframe>
+
+        <!-- IMAGE -->
+        <img id="bracket-image"
+             style="max-width:100%; display:none; margin-top:20px;" />
+
       </div>
     </div>
 
@@ -91,10 +98,16 @@ let regulamentoSelecionado = "";
 let categoriaSelecionada = "";
 let generoSelecionado = "";
 
-/* === LINK DO REGULAMENTO === */
-const regulamentoLink = "https://1drv.ms/x/c/b894b1671d1e3831/IQTRBNrxqSUXQptynbVlWKFSAbrqZRBGV5aOQmT0hcSsZNs?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E";
+/* === REGULAMENTO === */
+const regulamentoLink = "https://1drv.ms/x/c/b894b1671d1e3831/IQTRBNrxqSUXQptynbVlWKFSAbrqZRBGV5aOQmT0hcSsZNs?em=2";
 
-/* === MAPA === */
+/* === ONLY THESE TWO HAVE IMAGES === */
+const imageMap = {
+  "sub15-masc": "/img/torneio/notavailable.jpeg",
+  "sub21-fem": "/img/torneio/notavailable.jpeg"
+};
+
+/* === SHEETS === */
 const sheetMap = {
   "sub15-masc": "",
   "sub15-fem": "https://1drv.ms/x/c/b894b1671d1e3831/IQS999Xk9oDsRZaWtuAyTDcmAQfbWMnEkULavtbZzDYfPcI?em=2",
@@ -115,10 +128,11 @@ const sheetMap = {
   "open-fem": "https://1drv.ms/x/c/b894b1671d1e3831/IQRP3FbZKKX1SJ1F8nrmC822Abc0G9jcKnf-2yBM-HLPc-s?em=2",
 };
 
-/* === REGULAMENTO (TOGGLE) === */
+/* === REGULAMENTO === */
 function setRegulamento(reg, element) {
 
   const iframe = document.getElementById("bracket-frame");
+  const image = document.getElementById("bracket-image");
   const message = document.getElementById("message");
 
   if (regulamentoSelecionado === reg) {
@@ -126,7 +140,9 @@ function setRegulamento(reg, element) {
     element.classList.remove("active");
 
     iframe.style.display = "none";
+    image.style.display = "none";
     message.style.display = "block";
+
   } else {
     regulamentoSelecionado = reg;
 
@@ -141,44 +157,35 @@ function setRegulamento(reg, element) {
 
     iframe.src = regulamentoLink;
     iframe.style.display = "block";
+    image.style.display = "none";
     message.style.display = "none";
   }
 }
 
-/* === CATEGORY (TOGGLE) === */
+/* === CATEGORY === */
 function setCategoria(cat, element) {
 
-  if (categoriaSelecionada === cat) {
-    categoriaSelecionada = "";
-    element.classList.remove("active");
-  } else {
-    categoriaSelecionada = cat;
+  categoriaSelecionada = (categoriaSelecionada === cat) ? "" : cat;
 
-    document.querySelectorAll(".category-btn").forEach(btn => {
-      btn.classList.remove("active");
-    });
+  document.querySelectorAll(".category-btn").forEach(btn => {
+    btn.classList.remove("active");
+  });
 
-    element.classList.add("active");
-  }
+  if (categoriaSelecionada) element.classList.add("active");
 
   updateBracket();
 }
 
-/* === GENDER (TOGGLE) === */
+/* === GENDER === */
 function setGenero(gen, element) {
 
-  if (generoSelecionado === gen) {
-    generoSelecionado = "";
-    element.classList.remove("active");
-  } else {
-    generoSelecionado = gen;
+  generoSelecionado = (generoSelecionado === gen) ? "" : gen;
 
-    document.querySelectorAll(".gender-btn").forEach(btn => {
-      btn.classList.remove("active");
-    });
+  document.querySelectorAll(".gender-btn").forEach(btn => {
+    btn.classList.remove("active");
+  });
 
-    element.classList.add("active");
-  }
+  if (generoSelecionado) element.classList.add("active");
 
   updateBracket();
 }
@@ -187,19 +194,34 @@ function setGenero(gen, element) {
 function updateBracket() {
 
   const iframe = document.getElementById("bracket-frame");
+  const image = document.getElementById("bracket-image");
   const message = document.getElementById("message");
 
   if (!categoriaSelecionada || !generoSelecionado) {
     iframe.style.display = "none";
+    image.style.display = "none";
     message.style.display = "block";
     return;
   }
 
   const key = categoriaSelecionada + "-" + generoSelecionado;
 
+  // ONLY THESE 2 USE IMAGE
+  if (imageMap[key]) {
+    image.src = imageMap[key];
+    image.style.display = "block";
+
+    iframe.style.display = "none";
+    message.style.display = "none";
+    return;
+  }
+
+  // ALL OTHERS USE IFRAME
   if (sheetMap[key]) {
     iframe.src = sheetMap[key];
     iframe.style.display = "block";
+
+    image.style.display = "none";
     message.style.display = "none";
   }
 }
