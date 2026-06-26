@@ -49,34 +49,33 @@
   </div>
 
   <!-- Popup Script -->
-  <script>
-    window.onload = function () {
-      var path = window.location.pathname;
+  
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var path = window.location.pathname;
+    var overlay = document.getElementById("popup-overlay");
 
-      // Show ONLY on homepage
-      if (
-        path === "/" ||
-        path === "/index.html" ||
-        path === "/aeafavoretto.github.io/"
-      ) {
-        document.getElementById("popup-overlay").style.display = "flex";
-        document.body.classList.add("popup-open");
-      }
-    };
+    if (overlay && (path === "/" || path.endsWith("index.html"))) {
+      overlay.style.display = "flex";
+      document.body.classList.add("popup-open");
+    }
+  });
 
-    function closePopup() {
-      document.getElementById("popup-overlay").style.display = "none";
-      document.body.classList.remove("popup-open");
+  function closePopup() {
+    var overlay = document.getElementById("popup-overlay");
+    overlay.style.display = "none";
+    document.body.classList.remove("popup-open");
+  }
+
+  document.addEventListener("click", function (e) {
+    var overlay = document.getElementById("popup-overlay");
+    if (e.target === overlay) {
+      closePopup();
     }
 
-    // Close when clicking outside popup
-    document.addEventListener("click", function (e) {
-      var overlay = document.getElementById("popup-overlay");
-      if (e.target === overlay) {
-        closePopup();
-      }
-    });
-  </script>
+  });
+</script>
+
 
 </body>
 
