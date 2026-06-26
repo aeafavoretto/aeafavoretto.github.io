@@ -99,7 +99,7 @@ let categoriaSelecionada = "";
 let generoSelecionado = "";
 
 /* === REGULAMENTO === */
-const regulamentoLink = "https://1drv.ms/x/c/b894b1671d1e3831/IQTRBNrxqSUXQptynbVlWKFSAbrqZRBGV5aOQmT0hcSsZNs?em=2";
+const regulamentoLink = "https://1drv.ms/x/c/b894b1671d1e3831/IQTRBNrxqSUXQptynbVlWKFSAbrqZRBGV5aOQmT0hcSsZNs?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E";
 
 /* === ONLY THESE TWO HAVE IMAGES === */
 const imageMap = {
@@ -110,22 +110,22 @@ const imageMap = {
 /* === SHEETS === */
 const sheetMap = {
   "sub15-masc": "",
-  "sub15-fem": "https://1drv.ms/x/c/b894b1671d1e3831/IQS999Xk9oDsRZaWtuAyTDcmAQfbWMnEkULavtbZzDYfPcI?em=2",
+  "sub15-fem": "https://1drv.ms/x/c/b894b1671d1e3831/IQS999Xk9oDsRZaWtuAyTDcmAQfbWMnEkULavtbZzDYfPcI?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
 
-  "sub17-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQSg-BBiHhjvSJiZEAZ7_w4SAYU-FRZtfUl5RetruLn_saM?em=2",
-  "sub17-fem": "https://1drv.ms/x/c/b894b1671d1e3831/IQSAllKj_CuFQo68V79ABewMAY94hmXwh6OgD607dF2cTtw?em=2",
+  "sub17-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQSg-BBiHhjvSJiZEAZ7_w4SAYU-FRZtfUl5RetruLn_saM?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
+  "sub17-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQSAllKj_CuFQo68V79ABewMAY94hmXwh6OgD607dF2cTtw?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
 
-  "sub19-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQR2G9GULCOGTZb5N6SSexzpAek39c4HOr1s_BG0dWMjSHU?em=2",
-  "sub19-fem": "https://1drv.ms/x/c/b894b1671d1e3831/IQRprjv4Jc_2S7ej48j1Cz97AVVY6Yj5fghb0M7-vAQoOqU?em=2",
+  "sub19-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQR2G9GULCOGTZb5N6SSexzpAek39c4HOr1s_BG0dWMjSHU?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
+  "sub19-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQRprjv4Jc_2S7ej48j1Cz97AVVY6Yj5fghb0M7-vAQoOqU?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
 
-  "sub21-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRzueyN3_ioSKpr7BtGJorXARiLOY5-x3K2THSCyCrahgo?em=2",
-  "sub21-fem": "",
+  "sub21-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRzueyN3_ioSKpr7BtGJorXARiLOY5-x3K2THSCyCrahgo?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
+  "sub21-fem":  "",
 
-  "quali-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRGfggDR-jVQqIFk-EzCutHAYHkBuh6-5R83sHXQ_A4svU?em=2",
-  "quali-fem": "https://1drv.ms/x/c/b894b1671d1e3831/IQRP3FbZKKX1SJ1F8nrmC822Abc0G9jcKnf-2yBM-HLPc-s?em=2",
+  "quali-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRGfggDR-jVQqIFk-EzCutHAYHkBuh6-5R83sHXQ_A4svU?em=2&wdAllowInteractivity=False&ActiveCell=%27Duplas_Quali%27!C12&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
+  "quali-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQRP3FbZKKX1SJ1F8nrmC822Abc0G9jcKnf-2yBM-HLPc-s?em=2&wdAllowInteractivity=False&ActiveCell=%27Duplas_Quali%27!A1&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
 
-  "open-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRGfggDR-jVQqIFk-EzCutHAYHkBuh6-5R83sHXQ_A4svU?em=2",
-  "open-fem": "https://1drv.ms/x/c/b894b1671d1e3831/IQRP3FbZKKX1SJ1F8nrmC822Abc0G9jcKnf-2yBM-HLPc-s?em=2",
+  "open-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRGfggDR-jVQqIFk-EzCutHAYHkBuh6-5R83sHXQ_A4svU?em=2&wdAllowInteractivity=False&ActiveCell=%27Duplas%27!A1&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
+  "open-fem":  "https://1drv.ms/x/c/b894b1671d1e3831/IQRP3FbZKKX1SJ1F8nrmC822Abc0G9jcKnf-2yBM-HLPc-s?em=2&wdAllowInteractivity=False&ActiveCell=%27Duplas%27!A1&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E",
 };
 
 /* === REGULAMENTO === */
