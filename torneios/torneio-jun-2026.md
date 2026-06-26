@@ -92,7 +92,7 @@ let categoriaSelecionada = "";
 let generoSelecionado = "";
 
 /* === LINK DO REGULAMENTO === */
-const regulamentoLink = "COLE_AQUI_SEU_LINK_DO_REGULAMENTO";
+const regulamentoLink = "https://1drv.ms/x/c/b894b1671d1e3831/IQTRBNrxqSUXQptynbVlWKFSAbrqZRBGV5aOQmT0hcSsZNs?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E";
 
 /* === MAPA === */
 const sheetMap = {
