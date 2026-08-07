@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "3ª Etapa do 4º Circuito AEA de Vôlei de Praia"
+title: 
 permalink: /torneios/torneio-out-2026/
 ---
 
@@ -18,7 +18,7 @@ permalink: /torneios/torneio-out-2026/
 
     <div class="row">
       <div class="col-lg-12 text-center">
-        {{ site.baseurl }}/img/etapas/out2026.jpeg
+        aeafavoretto.github.io/img/etapas/out2026.jpeg
       </div>
     </div>
 
