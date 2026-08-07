@@ -7,7 +7,6 @@ permalink: /torneios/torneio-ago-2026-3a/
 <section id="torneios">
   <div class="container">
 
-    <!-- TITLE -->
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="title-lines">
@@ -17,10 +16,11 @@ permalink: /torneios/torneio-ago-2026-3a/
       </div>
     </div>
 
-    <!-- TOURNAMENT IMAGE -->
     <div class="row">
       <div class="col-lg-12 text-center">
-        <img
-          src="/img/torneio/etapas/ago2026-intermediario.jpeg"
+        /img/torneio/etapas/ago2026-intermediario.jpeg
       </div>
+    </div>
+
+  </div>
 </section>

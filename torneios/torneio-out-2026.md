@@ -7,7 +7,6 @@ permalink: /torneios/torneio-out-2026/
 <section id="torneios">
   <div class="container">
 
-    <!-- TITLE -->
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="title-lines">
@@ -17,10 +16,11 @@ permalink: /torneios/torneio-out-2026/
       </div>
     </div>
 
-    <!-- TOURNAMENT IMAGE -->
     <div class="row">
       <div class="col-lg-12 text-center">
-        <img
-          src="/img/torneio/etapas/out2026.jpeg"
+        /img/torneio/etapas/out2026.jpeg
       </div>
+    </div>
+
+  </div>
 </section>
