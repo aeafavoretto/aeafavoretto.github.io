@@ -66,6 +66,15 @@ permalink: /torneios/torneio-jun-2026/
     <div class="row">
       <div class="col-lg-12 text-center">
 
+        <!-- FOTO DOS CAMPEÕES -->
+        <div id="winner-photo-container"
+            style="display:none; margin-bottom:20px;">
+
+          <img id="winner-photo"
+              style="max-width:100%; border-radius:8px;" />
+
+        </div>
+
         <!-- IFRAME -->
         <iframe id="bracket-frame"
           width="100%"
@@ -107,6 +116,18 @@ const imageMap = {
   "sub21-fem": "/img/torneio/notavailable.jpeg"
 };
 
+const winnersMap = {
+  "sub15-fem": "/img/torneio/jun26/sub15-fem.jpeg",
+  "sub17-masc": "/img/torneio/jun26/sub17-masc.jpeg",
+  "sub17-fem": "/img/torneio/jun26/sub17-fem.jpeg",
+  "sub19-masc": "/img/torneio/jun26/sub19-masc.jpeg",
+  "sub19-fem": "/img/torneio/jun26/sub19-fem.jpeg",
+  "sub21-masc": "/img/torneio/jun26/sub21-masc.jpeg",
+  "open-masc": "/img/torneio/jun26/open-masc.jpeg",
+  "open-fem": "/img/torneio/jun26/open-fem.jpeg",
+  
+};
+
 /* === SHEETS === */
 const sheetMap = {
   "sub15-masc": "",
@@ -134,6 +155,7 @@ function setRegulamento(reg, element) {
   const iframe = document.getElementById("bracket-frame");
   const image = document.getElementById("bracket-image");
   const message = document.getElementById("message");
+  const winnerPhotoContainer = document.getElementById("winner-photo-container");
 
   if (regulamentoSelecionado === reg) {
     regulamentoSelecionado = "";
@@ -141,6 +163,7 @@ function setRegulamento(reg, element) {
 
     iframe.style.display = "none";
     image.style.display = "none";
+    winnerPhotoContainer.style.display = "none";
     message.style.display = "block";
 
   } else {
@@ -158,6 +181,7 @@ function setRegulamento(reg, element) {
     iframe.src = regulamentoLink;
     iframe.style.display = "block";
     image.style.display = "none";
+    winnerPhotoContainer.style.display = "none";
     message.style.display = "none";
   }
 }
@@ -197,32 +221,58 @@ function updateBracket() {
   const image = document.getElementById("bracket-image");
   const message = document.getElementById("message");
 
+  const winnerPhotoContainer =
+    document.getElementById("winner-photo-container");
+
+  const winnerPhoto =
+    document.getElementById("winner-photo");
+
   if (!categoriaSelecionada || !generoSelecionado) {
+
     iframe.style.display = "none";
     image.style.display = "none";
+    winnerPhotoContainer.style.display = "none";
     message.style.display = "block";
+
     return;
   }
 
   const key = categoriaSelecionada + "-" + generoSelecionado;
 
-  // ONLY THESE 2 USE IMAGE
-  if (imageMap[key]) {
-    image.src = imageMap[key];
-    image.style.display = "block";
+  /* MOSTRA FOTO DOS CAMPEÕES SE EXISTIR */
+  if (winnersMap[key]) {
+    winnerPhoto.src = winnersMap[key];
+    winnerPhotoContainer.style.display = "block";
+  } else {
+    winnerPhotoContainer.style.display = "none";
+  }
 
+  /* MODALIDADES COM IMAGEM */
+  if (imageMap[key]) {
+
+    image.src = imageMap[key];
+
+    image.style.display = "block";
     iframe.style.display = "none";
     message.style.display = "none";
+
     return;
   }
 
-  // ALL OTHERS USE IFRAME
+  /* MODALIDADES COM PLANILHA */
   if (sheetMap[key]) {
-    iframe.src = sheetMap[key];
-    iframe.style.display = "block";
 
+    iframe.src = sheetMap[key];
+
+    iframe.style.display = "block";
     image.style.display = "none";
     message.style.display = "none";
+
+  } else {
+
+    iframe.style.display = "none";
+    image.style.display = "none";
+    message.style.display = "block";
   }
 }
 </script>
