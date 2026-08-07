@@ -20,38 +20,41 @@
   {% include modals.html %}
   {% include js.html %}
 
-  <!-- Popup Overlay -->
-  <div id="popup-overlay" class="popup-overlay">
-    <div class="popup-box">
-      <h2>Atenção!</h2>
-      <p>
-        Atletas que forem competir neste próximo Sábado, 27 de Junho:
-      </p>
+<!-- Popup Overlay -->
+<div id="popup-overlay" class="popup-overlay">
+  <div class="popup-box">
+    <h2>Próximas Etapas</h2>
 
-      <ul>
-        <li>Não esquecer camiseta se jogou a primeira etapa!</li>
-        <li>A Arena241 estará barrando entrada de delivery iFood na porta!</li>
-        <li>
-          Horários do início da competição:
-            <ul>
-              <li>Sub 15 Fem: 07h30</li>
-              <li>Sub 19 Masc: 07h30</li>
-              <li>Sub 19 Fem: 08h00</li>
-              <li>Sub 21 Masc: 08h00</li>
-              <li>(Quali) Open Masc/Fem: 09h00</li>
-              <li>Sub 17 Masc/Fem: 12h30</li>
-              <li>Open Masc/Fem: 13h00</li>
-            </ul>
-        </li>
-      </ul>
-      <button class="btn btn-primary" onclick="closePopup()">Fechar</button>
-    </div>
+    <p>
+      Confira as datas das próximas competições:
+    </p>
+
+    <ul>
+      <li>
+        <strong>30/08</strong>
+        <ul>
+          <li>3ª Etapa Intermediário AEA Masculino e Feminino</li>
+          <li>2ª Etapa Interescolar AEA Masculino e Feminino</li>
+          <li>1ª Etapa Kids AEA</li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>03/10</strong>
+        <ul>
+          <li>3ª Etapa Circuito AEA Favoretto</li>
+        </ul>
+      </li>
+    </ul>
+
+    <button class="btn btn-primary" onclick="closePopup()">Fechar</button>
   </div>
+</div>
 
   <!-- Popup Script -->
   
 
-<!-- <script>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     const overlay = document.getElementById("popup-overlay");
 
@@ -89,7 +92,7 @@
       closePopup();
     }
   });
-</script> -->
+</script>
 
 
 
