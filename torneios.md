@@ -21,7 +21,7 @@ permalink: /torneios/
         <span class="torneio-data">Junho de 2026</span>
 
         <h4>
-          <a href="{{ site.baseurl }}/torneios/torneio-jun-2026/>2ª Etapa do 4º Circuito AEA de Vôlei de Praia
+          <a href="{{ site.baseurl }}/torneios/torneio-jun-2026/">2ª Etapa do 4º Circuito AEA de Vôlei de Praia
           </a>
         </h4>
 
