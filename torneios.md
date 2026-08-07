@@ -25,7 +25,7 @@ permalink: /torneios/
           </a>
         </h4>
 
-        <a href="">📸 Fotos
+        <a href="https://banlek.com/album/231d2e-2-etapa-4-circuito-aea-volei-de-praia-2026">📸 Fotos
         </a>
       </div>
 
@@ -60,7 +60,7 @@ permalink: /torneios/
   display: inline-block;
   background: #ffe7d8;
   color: #ff5c00;
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   font-weight: 600;
   padding: 5px 10px;
   border-radius: 20px;
