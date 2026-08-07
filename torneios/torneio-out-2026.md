@@ -7,6 +7,7 @@ permalink: /torneios/torneio-out-2026/
 <section id="torneios">
   <div class="container">
 
+    <!-- TÍTULO -->
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="title-lines">
@@ -16,9 +17,12 @@ permalink: /torneios/torneio-out-2026/
       </div>
     </div>
 
+    <!-- IMAGEM (Procedimento Foto dos Campeões) -->
     <div class="row">
       <div class="col-lg-12 text-center">
-        aeafavoretto.github.io/img/etapas/out2026.jpeg
+        <img src="https://aeafavoretto.github.io/img/etapas/out2026.jpeg" 
+             alt="Cartaz da 3ª Etapa" 
+             style="max-width:100%; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom:20px;">
       </div>
     </div>
 
