@@ -60,7 +60,7 @@ permalink: /torneios/
   display: inline-block;
   background: #ffe7d8;
   color: #ff5c00;
-  font-size: 0.85rem;
+  font-size: 1.15rem;
   font-weight: 600;
   padding: 5px 10px;
   border-radius: 20px;
