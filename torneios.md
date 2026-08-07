@@ -38,12 +38,12 @@ permalink: /torneios/
         </h4>
 
         <h4>
-          <a href="{{ site.baseurl }}/torneios/torneio-ago-2026/">2ª Etapa Inter-Escolar do Circuito AEA de Vôlei de Praia
+          <a href="{{ site.baseurl }}/torneios/torneio-ago-2026-2a/">2ª Etapa Inter-Escolar do Circuito AEA de Vôlei de Praia
           </a>
         </h4>
 
         <h4>
-          <a href="{{ site.baseurl }}/torneios/torneio-ago-2026/">1ª Etapa Kids do Circuito AEA de Vôlei de Praia
+          <a href="{{ site.baseurl }}/torneios/torneio-ago-2026-1a/">1ª Etapa Kids do Circuito AEA de Vôlei de Praia
           </a>
         </h4>
 
