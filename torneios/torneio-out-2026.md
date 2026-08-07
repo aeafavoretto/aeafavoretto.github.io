@@ -18,7 +18,7 @@ permalink: /torneios/torneio-out-2026/
 
     <div class="row">
       <div class="col-lg-12 text-center">
-        ../img/torneio/etapas/out2026.jpeg
+        /img/etapas/out2026.jpeg
       </div>
     </div>
 
