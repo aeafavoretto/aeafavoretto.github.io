@@ -18,6 +18,40 @@ permalink: /torneios/
     <div class="torneios-lista">
 
       <div class="torneio-card">
+        <span class="torneio-data">Outubro de 2026</span>
+
+        <h4>
+          <a href="{{ site.baseurl }}/torneios/torneio-out-2026/">3ª Etapa do 4º Circuito AEA de Vôlei de Praia
+          </a>
+        </h4>
+
+        <!-- <a href="https://banlek.com/album/231d2e-2-etapa-4-circuito-aea-volei-de-praia-2026">📸 Fotos
+        </a> -->
+      </div>
+
+      <div class="torneio-card">
+        <span class="torneio-data">Agosto de 2026</span>
+
+        <h4>
+          <a href="{{ site.baseurl }}/torneios/torneio-ago-2026-3a/">3ª Etapa Intermediário do Circuito AEA de Vôlei de Praia
+          </a>
+        </h4>
+
+        <h4>
+          <a href="{{ site.baseurl }}/torneios/torneio-ago-2026/">2ª Etapa Inter-Escolar do Circuito AEA de Vôlei de Praia
+          </a>
+        </h4>
+
+        <h4>
+          <a href="{{ site.baseurl }}/torneios/torneio-ago-2026/">1ª Etapa Kids do Circuito AEA de Vôlei de Praia
+          </a>
+        </h4>
+
+        <!-- <a href="https://banlek.com/album/231d2e-2-etapa-4-circuito-aea-volei-de-praia-2026">📸 Fotos
+        </a> -->
+      </div>
+
+      <div class="torneio-card">
         <span class="torneio-data">Junho de 2026</span>
 
         <h4>
