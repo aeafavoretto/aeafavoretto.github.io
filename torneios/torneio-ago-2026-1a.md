@@ -75,8 +75,8 @@ const regulamentoLink = "https://1drv.ms/x/c/b894b1671d1e3831/IQTRBNrxqSUXQptynb
 
 /* === SHEETS === */
 const sheetMap = {
-  "sub15-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRy0DN0kfJZR6KAK8KtaUsvAdgYQssIDcYnBRjRNiStVOQ?em=2&wdAllowInteractivity=False&Item='SUB%20MASC'!A1%3ABB500&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True",
-  "sub15-fem": "https://1drv.ms/x/c/b894b1671d1e3831/IQRy0DN0kfJZR6KAK8KtaUsvAdgYQssIDcYnBRjRNiStVOQ?em=2&wdAllowInteractivity=False&Item='SUB%20FEM'!A1%3ABB500&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True",
+  "kids-masc": "https://1drv.ms/x/c/b894b1671d1e3831/IQRy0DN0kfJZR6KAK8KtaUsvAdgYQssIDcYnBRjRNiStVOQ?em=2&wdAllowInteractivity=False&Item='SUB%20MASC'!A1%3ABB500&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True",
+  "kids-fem": "https://1drv.ms/x/c/b894b1671d1e3831/IQRy0DN0kfJZR6KAK8KtaUsvAdgYQssIDcYnBRjRNiStVOQ?em=2&wdAllowInteractivity=False&Item='SUB%20FEM'!A1%3ABB500&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True",
 };
 
 /* === REGULAMENTO === */
