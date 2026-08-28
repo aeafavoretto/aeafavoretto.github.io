@@ -87,25 +87,9 @@ function setRegulamento(reg, element) {
   const message = document.getElementById("message");
   const winnerPhotoContainer = document.getElementById("winner-photo-container");
 
-  if (regulamentoSelecionado === reg) {
-    regulamentoSelecionado = "";
-    element.classList.remove("active");
-
-    iframe.style.display = "none";
-    image.style.display = "none";
-    winnerPhotoContainer.style.display = "none";
-    message.style.display = "block";
-
-  } else {
-    regulamentoSelecionado = reg;
-
-    document.querySelectorAll("button").forEach(btn => {
-      btn.classList.remove("active");
-    });
-
     element.classList.add("active");
 
-    categoriaSelecionada = "";
+    categoriaSelecionada = "kids";
     generoSelecionado = "";
 
     iframe.src = regulamentoLink;
@@ -167,7 +151,7 @@ function updateBracket() {
     return;
   }
 
-  const key = categoriaSelecionada + "-" + generoSelecionado;
+  const key = "kids-" + generoSelecionado;
 
   /* MOSTRA FOTO DOS CAMPEÕES SE EXISTIR */
   if (winnersMap[key]) {
