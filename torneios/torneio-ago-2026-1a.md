@@ -11,7 +11,7 @@ permalink: /torneios/torneio-ago-2026-1a/
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="title-lines">
-          <span>2ª Etapa do 4º Circuito AEA de Vôlei de Praia</span>
+          <span>1ª Etapa Kids do Circuito AEA de Vôlei de Praia</span>
         </h2>
         <hr class="star-primary">
       </div>
@@ -33,6 +33,22 @@ permalink: /torneios/torneio-ago-2026-1a/
         <p id="message" class="text-muted">
           Selecione um gênero.
         </p>
+      </div>
+    </div>
+
+    <!-- DISPLAY -->
+    <div class="row">
+      <div class="col-lg-12 text-center">
+      
+        <!-- IFRAME -->
+        <iframe id="bracket-frame"
+          width="100%"
+          height="700"
+          frameborder="0"
+          scrolling="yes"
+          style="border:none; display:none;">
+        </iframe>
+
       </div>
     </div>
 
