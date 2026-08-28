@@ -4,31 +4,6 @@ title:
 permalink: /torneios/torneio-ago-2026-1a/
 ---
 
-<!-- <section id="torneios">
-  <div class="container">
-
-    <!-- TÍTULO -->
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="title-lines">
-          <span>1ª Etapa Kids do Circuito AEA de Vôlei de Praia</span>
-        </h2>
-        <hr class="star-primary">
-      </div>
-    </div>
-
-    <!-- IMAGEM (Procedimento Foto dos Campeões) -->
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <img src="https://aeafavoretto.github.io/img/etapas/ago2026.jpeg" 
-             alt="Cartaz da 3ª Etapa" 
-             style="max-width:100%; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom:20px;">
-      </div>
-    </div>
-
-  </div>
-</section> -->
-
 <section id="torneios">
   <div class="container">
 
@@ -41,32 +16,6 @@ permalink: /torneios/torneio-ago-2026-1a/
         <hr class="star-primary">
       </div>
     </div>
-
-    <!-- REGULAMENTO
-    <div class="row text-center" style="margin-bottom:20px;">
-      <div class="col-lg-12">
-        <h4>Regulamento</h4>
-
-        <button class="btn btn-default regulamento-btn"
-          onclick="setRegulamento('reg', this)">
-          Regulamento
-        </button>
-      </div>
-    </div> -->
-
-    <!-- CATEGORY
-    <div class="row text-center" style="margin-bottom:20px;">
-      <div class="col-lg-12">
-        <h4>Categoria</h4>
-
-        <button class="btn btn-default category-btn" onclick="setCategoria('sub15', this)">Sub-15</button>
-        <button class="btn btn-default category-btn" onclick="setCategoria('sub17', this)">Sub-17</button>
-        <button class="btn btn-default category-btn" onclick="setCategoria('sub19', this)">Sub-19</button>
-        <button class="btn btn-default category-btn" onclick="setCategoria('sub21', this)">Sub-21</button>
-        <button class="btn btn-default category-btn" onclick="setCategoria('quali', this)">Quali</button>
-        <button class="btn btn-default category-btn" onclick="setCategoria('open', this)">Open</button>
-      </div>
-    </div> -->
 
     <!-- MODALITY -->
     <div class="row text-center" style="margin-bottom:30px;">
@@ -86,35 +35,6 @@ permalink: /torneios/torneio-ago-2026-1a/
         </p>
       </div>
     </div>
-
-    <!-- DISPLAY
-    <div class="row">
-      <div class="col-lg-12 text-center">
-
-        <!-- FOTO DOS CAMPEÕES -->
-        <div id="winner-photo-container"
-            style="display:none; margin-bottom:20px;">
-
-          <img id="winner-photo"
-              style="max-width:100%; border-radius:8px;" />
-
-        </div>
-
-        <!-- IFRAME -->
-        <iframe id="bracket-frame"
-          width="100%"
-          height="700"
-          frameborder="0"
-          scrolling="yes"
-          style="border:none; display:none;">
-        </iframe>
-
-        <!-- IMAGE -->
-        <img id="bracket-image"
-             style="max-width:100%; display:none; margin-top:20px;" />
-
-      </div>
-    </div> -->
 
   </div>
 </section>
