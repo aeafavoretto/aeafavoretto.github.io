@@ -4,5 +4,5 @@ modal-id: 3
 date: 2014-07-16
 img: treinos.png
 alt: image-alt
-description: Na AEA, você treina em um ambiente acolhedor na Arena 241, nossa parceira no projeto. Oferecemos horários flexíveis durante a semana e aos sábados de manhã. 👉 [Entre em contato e encontre a turma ideal para você!](https://aeafavoretto.com.br/contato)
+description: Na AEA, você treina em um ambiente acolhedor na Arena 241, nossa parceira no projeto. Oferecemos horários flexíveis durante a semana e aos sábados de manhã. 👉 [Entre em contato e encontre a turma ideal para você!](https://aeafavoretto.com.br/#contact)
 ---

@@ -4,5 +4,5 @@ modal-id: 5
 date: 2014-07-14
 img: competicao.png
 alt: image-alt
-description: Na AEA, incentivamos a vivência competitiva. Nossos atletas representam São Carlos em torneios pelo estado e até em nível nacional, sempre em busca de evolução no esporte. 👉 [Venha competir, aprender e crescer com a gente!](https://aeafavoretto.com.br/contato/)
+description: Na AEA, incentivamos a vivência competitiva. Nossos atletas representam São Carlos em torneios pelo estado e até em nível nacional, sempre em busca de evolução no esporte. 👉 [Venha competir, aprender e crescer com a gente!](https://aeafavoretto.com.br/torneios/)
 ---
