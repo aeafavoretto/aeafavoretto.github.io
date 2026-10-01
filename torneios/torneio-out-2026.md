@@ -108,7 +108,7 @@ let categoriaSelecionada = "";
 let generoSelecionado = "";
 
 /* === REGULAMENTO === */
-const regulamentoLink = "https://1drv.ms/x/c/b894b1671d1e3831/IQTRBNrxqSUXQptynbVlWKFSAbrqZRBGV5aOQmT0hcSsZNs?em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0%22%3E%3C/iframe%3E";
+const regulamentoLink = "https://1drv.ms/x/c/b894b1671d1e3831/IQRsxQT3TqPMSZiCYK833A9hAfQk1Vkpn1MQtaULKNTo3is?em=2&wdAllowInteractivity=False&ActiveCell='DISPUTA'!A1&Item='DISPUTA'!A1%3AO13&wdInConfigurator=True&wdInConfigurator=True";
 
 /* === ONLY THESE TWO HAVE IMAGES === */
 const imageMap = {
